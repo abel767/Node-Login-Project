@@ -1,0 +1,42 @@
+
+    <section class="">
+
+    </section>
+    <section class="form my-4 mx-5 "></section>
+    <div class="container">
+        <div class="row no-gutters ">
+            <div class="col-lg-5 p-0">
+                {{!-- <img src="assets/loginBanner.png" alt="" class="img-fluid"> --}}
+            </div>
+            <div class="col-lg-7 px-5 pt-5">
+                <h1 class="font-weight-bold py3">Dive into the Gaming World</h1>
+                <h6>Unlock Your Profile</h6>
+                <h4 class="msg-box">{{msg}}</h4> {{!--for the invalid credentials--}} 
+                <form action="/verify" method="post">  {{!--form starting from here--}}
+                    <div class="form-row">
+                        <div class="col-lg-5">
+                            <input type="email" class="form-control my-3 p-2" name="email" placeholder="Email">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-lg-5">
+                            <input type="password" class="form-control my-3 p-2" name="password" placeholder="Password">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-lg-7">
+                            <button type="submit" class="btn btn-warning rounded-pill my-3 ">Submit</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    </section>
+
+
+<script>
+    setTimeout(() => {
+        document.querySelector('.msg-box').style.display = 'none';
+    }, 2000);
+</script>

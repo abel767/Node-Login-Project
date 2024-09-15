@@ -1,0 +1,20 @@
+{
+  "name": "week4task_login",
+  "version": "1.0.0",
+  "description": "login task",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "author": "Abel Thomas",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "express": "^4.21.0",
+    "express-session": "^1.18.0",
+    "hbs": "^4.2.0",
+    "nocache": "^4.0.0",
+    "nodemon": "^3.1.4"
+  }
+}
